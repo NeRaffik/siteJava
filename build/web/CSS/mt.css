@@ -1,0 +1,28 @@
+/* 
+    Created on : 02.01.2021, 15:14:05
+    Author     : User
+*/
+p0{text-align:justify;
+    font-family: PTSans-Caption,sans-serif;
+    font-size:9pt; 
+    font-style: italic;
+    color: black; /* Цвет текста */
+    padding: 0px;  /*Поля вокруг текста */
+}
+
+p1{text-align:left;
+   font-family: inherit;
+    /*font-family: PTSans-Caption,sans-serif;*/
+    font-size:14pt; 
+    font-style: italic;
+    color: black; /* Цвет текста */
+    padding: 0px;  /*Поля вокруг текста */
+}
+p2{text-align:center;
+   font-family: inherit;
+    /*font-family: PTSans-Caption,sans-serif;*/
+    font-size:14pt; 
+    font-style: initial;
+    color: white; /* Цвет текста */
+    padding: 0px;  /*Поля вокруг текста */
+}

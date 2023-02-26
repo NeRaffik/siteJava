@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Jewelry Store</title>
+        <link type="text/css" rel="stylesheet" href="CSS/style.css" media="all" />
+    </head>
+    <body>
+        <div id="main">
+
+            <h1>Введите логин и пароль для прохождения на следующую страницу</h1>	
+            <div class="form_box">		
+                <form name="search" action="http://localhost:8080/Web2/IndexServlet" class="rf">
+                        
+                            <label for="login">Логин</label>
+                            <input type="text" class="rfield" name="login" value=""/>
+
+                            <label for="password">Пароль</label>
+                            <input type="password" class="rfield" name="password"/>			                          
+
+                            <input type="submit" class="btn_submit disabled" name="send" value="Войти"/>			
+                    </form>
+                <script>
+                    function sendForm(e){     
+                        // получаем значение поля 
+                        var login = document.search.login;
+                        var password = document.search.password;           
+                        var l = login.value;
+                        var p = password.value;
+                        if((l === "admin")&&(p === "12345")){
+                            //alert("Отправка разрешена");
+                        }   
+                        else{
+                            
+                            alert("Что-то пошло не так. Попробуйте еще раз");
+                            document.search.action="http://localhost:8080/Web2/enter.html";}
+                    }
+                    var sendButton = document.search.send;
+                    sendButton.addEventListener("click", sendForm);
+                </script>
+            </div>	
+        </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="JS/required_fields.js"></script>
+        
+
+    </body>
+</html>
+

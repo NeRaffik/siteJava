@@ -1,0 +1,11 @@
+{
+    "elements": {
+        "p0": {},
+        "p2": {}
+    },
+    "attributes": {
+        "hint": {
+            "context": "input"
+        }
+    }
+}
